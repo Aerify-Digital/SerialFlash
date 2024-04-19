@@ -508,7 +508,7 @@ uint32_t SerialFlashChip::blockSize()
 
 uint32_t SerialFlashChip::frequency()
 {
-	return SPICONFIG._clock;
+	return SPICONFIG.getClockFreq();
 }
 
 

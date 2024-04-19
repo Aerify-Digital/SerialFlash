@@ -43,6 +43,7 @@ public:
 	void changeSettings(SPISettings& settings);
 	uint32_t capacity(const uint8_t *id);
 	uint32_t blockSize();
+	uint32_t frequency();
 	void sleep();
 	void wakeup();
 	void readID(uint8_t *buf);
