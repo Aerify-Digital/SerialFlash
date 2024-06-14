@@ -39,7 +39,7 @@ static volatile IO_REG_TYPE *cspin_basereg;
 static IO_REG_TYPE cspin_bitmask;
 
 static SPIClass& SPIPORT = SPI;
-static SPISettings SPICONFIG = SPISettings(26000000, MSBFIRST, SPI_MODE0);
+static SPISettings SPICONFIG = SPISettings(22000000, MSBFIRST, SPI_MODE0);
 
 #define FLAG_32BIT_ADDR		0x01	// larger than 16 MByte address
 #define FLAG_STATUS_CMD70	0x02	// requires special busy flag check
